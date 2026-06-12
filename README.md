@@ -2,6 +2,10 @@
 
 Fine-tune [TinyLlama v1.1](https://huggingface.co/TinyLlama/TinyLlama_v1.1) with LoRA (Low-Rank Adaptation) on a custom question-answer dataset about FIFA World Cup history. The project uses Hugging Face Transformers, PEFT, and Datasets to train a lightweight adapter and run inference with the fine-tuned model.
 
+## Important
+
+Yes, i know RAG would have been a better choice in this instance. I just wanted to use LoRA on something. To learn the different steps. 
+
 ## Overview
 
 This repository demonstrates parameter-efficient fine-tuning of a small language model for domain-specific Q&A. Instead of updating the full model weights, it trains a LoRA adapter on top of the frozen base model, keeping memory requirements low and training fast enough to run on CPU.
